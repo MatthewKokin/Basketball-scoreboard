@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -5,36 +6,33 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
-        <div class="box">
-            <h3 class="heading">HOME</h3>
-            <div class="back">
-                <h1 id="scoreHome">0</h1>
+        <div class="teamBox">
+            <h3 class="teamName">HOME</h3>
+            <div class="scoreBox">
+                <h1 id="homeScore">0</h1>
             </div>
-            <div class="Btns">
-                <button id="HomeOneBtn" class="Btn" onclick="HincrementOne()">+1</button>
-                <button id="HomeTwoBtn" class="Btn" onclick="HincrementTwo()">+2</button>
-                <button id="HomeThreeBtn" class="Btn" onclick="HincrementThree()">+3</button>
+            <div class="buttonContainer">
+                <button class="scoreButton" data-team="home" data-increment="1">+1</button>
+                <button class="scoreButton" data-team="home" data-increment="2">+2</button>
+                <button class="scoreButton" data-team="home" data-increment="3">+3</button>
             </div>
-
         </div>
-        <div class="box">
-            <h3 class="heading">GUEST</h3>
-            <div class="back">
-                <h1 id="scoreGuests">0</h1>
+        <div class="teamBox">
+            <h3 class="teamName">GUEST</h3>
+            <div class="scoreBox">
+                <h1 id="guestScore">0</h1>
             </div>
-            
-            <div class="Btns">
-                <button id="GuestOneBtn" class="Btn" onclick="GincrementOne()">+1</button>
-                <button id="GuestTwoBtn" class="Btn" onclick="GincrementTwo()">+2</button>
-                <button id="GuestThreeOneBtn" class="Btn" onclick="GincrementThree()">+3</button>
+            <div class="buttonContainer">
+                <button class="scoreButton" data-team="guest" data-increment="1">+1</button>
+                <button class="scoreButton" data-team="guest" data-increment="2">+2</button>
+                <button class="scoreButton" data-team="guest" data-increment="3">+3</button>
             </div>
-            
         </div>
     </div>
     <script src="index.js"></script>
